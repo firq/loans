@@ -18,8 +18,8 @@ public class LoanController {
         return service.apply(loanApplication);
     }
 
-    @PostMapping("/extend")
-    public Loan extendLoan(@RequestBody String loanId) {
+    @PostMapping("/extend/{loanId}")
+    public Loan extendLoan(@PathVariable String loanId) {
         return service.extend(loanId);
     }
 

@@ -8,9 +8,9 @@ public class LoanExtender {
 
     private final int extensionTerm;
 
-    public void extend(LoanEntity loan) {
+    public LoanEntity extend(LoanEntity loan) {
         var dueTo = loan.getDueTo();
         var newTerm = dueTo.plusDays(extensionTerm);
-        loan.setDueTo(newTerm);
+        return new LoanEntity(loan.getId(), newTerm, loan.getAmount());
     }
 }

@@ -1,5 +1,9 @@
 # loans
 
+Postman example collection available [here.](./postman/Loans.postman_collection.json) 
+
+# specification
+
 App for loan applications
 
 Tech requirements:

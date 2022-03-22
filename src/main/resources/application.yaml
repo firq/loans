@@ -3,7 +3,7 @@ loan:
   maxAmount: 100000.00
   minTerm: 30
   maxTerm: 360
-  extendsionTerm: 30
+  extensionTerm: 30
 
 spring:
   datasource:

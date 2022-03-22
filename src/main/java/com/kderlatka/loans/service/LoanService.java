@@ -25,8 +25,8 @@ public class LoanService {
 
     public Loan extend(String loanId) {
         LoanEntity loan = loanEntityById(loanId);
-        loanExtender.extend(loan);
-        return mapper.toLoan(repository.save(loan));
+        LoanEntity extended = loanExtender.extend(loan);
+        return mapper.toLoan(repository.save(extended));
     }
 
     public Loan fetch(String loanId) {

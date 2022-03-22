@@ -19,9 +19,9 @@ class LoanExtenderTest {
         var term = LocalDate.now().minusDays(10);
         LoanEntity loan = loan(term);
 
-        LOAN_EXTENDER.extend(loan);
+        var extended = LOAN_EXTENDER.extend(loan);
 
-        assertTrue(term.isBefore(loan.getDueTo()));
+        assertTrue(term.isBefore(extended.getDueTo()));
     }
 
     private LoanEntity loan(LocalDate term) {

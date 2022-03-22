@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Optional;
 
 import static com.kderlatka.loans.common.TestsCommons.*;
-import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
